@@ -1,0 +1,112 @@
+@use "../dir/variables";
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1em 2em;
+    min-height: 120vh;
+
+    &Container{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 2em;
+        max-width: variables.$max-width;
+        width: 100%;
+    }
+
+    &Title{
+        max-width: 400px;
+        width: 100%;
+
+        h2{
+            margin-top: .5em;
+            font-size: clamp(1.2em, 2vw + 0.8em, 2.3em);
+            text-align: center;
+            font-weight: 500;
+        }
+    }
+}
+
+.formSection{
+    max-width: 450px;
+    width: 100%;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    font-weight: 400;
+    // background-color: red;
+    // max-width: 500px;
+    // width: 100%;
+
+    label{
+        display: block;
+    }
+
+    input, 
+    textarea{
+        width: 100%;
+    }
+
+    &Wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 0.4em;
+
+        span{
+            font-size: 1.1em;
+        }
+
+        textarea{
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        input{
+            padding: 0.8em;
+            outline-offset: 0.4em;
+            border: 1px solid #555;
+            border-radius: .1em;
+        }
+
+        button{
+            width: fit-content;
+            padding: 1em 1.5em;
+            background-color: #111;
+            border: none;
+            color: variables.$font-colorI;
+            cursor: pointer;
+            font-size: 1.1em;
+            border-radius: .2em;
+            transition: .4s ease-in-out;
+
+            &:hover{
+                transform: translate(5px, -5px);
+            }
+        }
+    }
+
+    &Name{
+        display: flex;
+        gap: 0.4em;
+
+        .formNameWrapper{
+            width: 100%;
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    .contact{
+        padding-bottom: 2em;
+        &Container{
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}

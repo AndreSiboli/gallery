@@ -1,0 +1,80 @@
+.sectionPhoto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+
+    .photoSection{
+        max-width: 1300px;
+        width: 100%;
+    }
+
+    .photoWrapper{
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .photoDesc{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: clamp(300px, 20vw + 100px, 400px);
+        padding: 3em 1.8em;
+        
+        p{  
+            font-size: 1.1em;
+            color: #333;
+            max-width: 500px;
+        }
+    }
+
+    .photoButton{
+        a{
+            display: flex;
+            align-items: center;
+            font-size: clamp(1.2em, 0.9em + 3vw, 1.8em);
+            color: #000;
+
+            svg{
+                font-size: clamp(1.2em, 0.9em + 3vw, 1.8em);
+            }
+        }
+    }
+
+    .photoPrev{
+        a{
+            justify-content: flex-start;
+        }
+        
+    }
+
+    .photoForw{
+        a{
+            justify-content: flex-end;
+        }
+    }
+
+    .photoBoth{
+        display: flex;
+        justify-content: space-between;
+    }
+   
+}
+
+@media screen and (max-width: 450px) {
+    .sectionPhoto{
+        .photoWrapper{
+            flex-direction: column;
+
+            .photoGroup{
+                max-width: 100%;
+            }
+        }
+
+        .photoDesc{
+            padding: 3em 1em;
+        }
+
+    }
+}

@@ -1,0 +1,33 @@
+.photoGroup{
+    column-count: 3;
+    column-gap: 10px;
+
+    figure{
+        max-width: 412px;
+        width: 100%;
+        break-inside: avoid;
+
+        img{
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .photoGroup{
+        column-count: 2;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .photoGroup{
+        padding: clamp(1em, 3vw + 0.7em, 1.7em);
+        column-count: 1;
+    }
+}
+
+   
+
+   
+
+  
