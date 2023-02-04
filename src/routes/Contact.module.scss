@@ -6,7 +6,7 @@
     justify-content: center;
     width: 100%;
     padding: 1em 2em;
-    min-height: 120vh;
+    margin: 2.5em 0;
 
     &Container{
         display: flex;
@@ -39,9 +39,6 @@
     flex-direction: column;
     gap: 1.5em;
     font-weight: 400;
-    // background-color: red;
-    // max-width: 500px;
-    // width: 100%;
 
     label{
         display: block;
@@ -103,7 +100,7 @@
 
 @media screen and (max-width: 768px){
     .contact{
-        padding-bottom: 2em;
+        
         &Container{
             flex-direction: column;
             align-items: center;

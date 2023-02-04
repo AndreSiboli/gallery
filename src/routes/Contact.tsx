@@ -24,21 +24,15 @@ export default function Contact(){
                         </div>
                         <div className={styles.formWrapper}>
                             <span>Email *</span>
-                            <div>
-                                <input type="email" id="email"/>
-                            </div>
+                            <input type="email" id="email"/>                          
                         </div>
                         <div className={styles.formWrapper}>
                             <span>Assunto *</span>
-                            <div>
-                                <input type="text" id="subject"/>
-                            </div>
+                            <input type="text" id="subject"/>
                         </div>
                         <div className={styles.formWrapper}>
                             <span>Mensegem *</span>
-                            <div>
                                 <textarea name="message" id="message" cols={30} rows={10}></textarea>
-                            </div>
                         </div>
                         <div className={styles.formWrapper}>
                             <button id="submitBtn">Enviar</button>
